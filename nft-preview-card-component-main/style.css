@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --vdb-main: hsl(217, 54%, 11%);
+    --vdb-card: hsl(216, 50%, 16%);
+    --vdb-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--vdb-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#box {
+    background-color: var(--vdb-card);
+    width: 300px;
+    height: 475px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#image > img {
+    border-radius: 10px;
+    height: 260px;
+    display: block;
+}
+
+#image:hover #view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#view {
+    height: 260px;
+    width: 260px;
+    display: none;
+    background-color: var(--cyan);
+    opacity: 0.5;
+    border-radius: 10px;
+    margin-top: -260px;
+}
+
+#title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#title:hover, #name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+#desc {
+    color: var(--soft-blue);
+    font-size: 15px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#price {
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+}
+
+#price img, #duration img {
+    margin-right: 5px;
+}
+
+#duration {
+    color: var(--soft-blue);
+    display: flex;
+    align-items: center;
+}
+
+#creator {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--vdb-line);
+    padding-top: 10px;
+    color: var(--soft-blue);
+    font-size: 13px;
+}
+
+#creator img {
+    height: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#name {
+    color: var(--white);
+    margin-left: 2px;
+}
