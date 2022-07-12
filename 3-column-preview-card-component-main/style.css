@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    --big-shoulders: 'Big Shoulders Display', cursive;
+    --lexend: 'Lexend Deca', sans-serif;
+
+    --border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-light-gray);
+}
+
+#card {
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+
+.car {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.car_name {
+    color: var(--very-light-gray);
+    font-family: var(--big-shoulders);
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.car_paragraph {
+    color: var(--transparent-white);
+    font-family: var(--lexend);
+    font-size: 15px;
+}
+
+.car_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.learn_more {
+    background-color: var(--very-light-gray);
+    font-family: var(--lexend);
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.sedans .learn_more {
+    color: var(--bright-orange);
+}
+
+.suvs .learn_more {
+    color: var(--dark-cyan);
+}
+
+.luxury .learn_more {
+    color: var(--very-dark-cyan);
+}
+
+.learn_more:hover {
+    cursor: pointer;
+    color: var(--very-light-gray);
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+}
