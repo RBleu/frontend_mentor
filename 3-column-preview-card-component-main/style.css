@@ -100,3 +100,37 @@ body {
     background-color: transparent;
     border: 2px solid var(--very-light-gray);
 }
+
+@media(max-width: 800px) {    
+    body {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    #card {
+        flex-direction: column;
+        width: 350px;
+        height: auto;
+    }
+
+    .car {
+        justify-content: space-between;
+        height: 350px;
+    }
+
+    .car_name {
+        margin: unset;
+    }
+
+    .car_button {
+        margin: unset;
+    }
+
+    .sedans {
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+}
